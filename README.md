@@ -1,5 +1,3 @@
-# ✅ PROFESSIONAL `README.md`
-
 # 🎟 Event Ticketing System
 
 A complete backend-based Event Ticketing System built using **FastAPI** and **MongoDB** that supports bulk ticket generation, QR code verification, PDF generation, and CSV export functionality.
@@ -31,30 +29,45 @@ A complete backend-based Event Ticketing System built using **FastAPI** and **Mo
 ## 📂 Project Structure
 
 app1/
+
 assets/
+
 output/
+
 ├── pdfs/
+
 ├── qr/
+
 templates/
+
 .env
+
 .gitignore
+
 main.py
+
 requirements.txt
+
 README.md
 
-## ⚙️ Installation
+## ⚙️ Installation and Setup
 
 ### 1️⃣ Clone Repository
 
 bash
+
 git clone https://github.com/your-username/ticketing-system.git
+
 cd ticketing-system
 
 ### 2️⃣ Create Virtual Environment
 
 bash
+
 python -m venv venv
+
 source venv/bin/activate   # Mac/Linux
+
 venv\Scripts\activate      # Windows
 
 ### 3️⃣ Install Dependencies
@@ -67,11 +80,13 @@ pip install -r requirements.txt
 Create `.env` file:
 
 MONGO_URL=your_mongodb_connection_string
+
 DATABASE_NAME=ticket_db
 
 ## ▶️ Run Application
 
 bash
+
 uvicorn main:app --reload
 
 Open in browser:
@@ -82,19 +97,19 @@ Swagger UI will open.
 
 ## 📌 API Endpoints
 
-### QR Code Generation
+#### QR Code Generation
 POST /ticket/generate-qr-codes
 
-### PDF Generation
+#### PDF Generation
 POST /generate-individual-pdfs
 
-### Export CSV
+#### Export CSV
 GET /ticket/export-csv
 
-### QR Code Scanning
+#### QR Code Scanning
 POST /ticket/scan
 
-### Welcome & Health
+#### Welcome & Health
 Greating
 GET /greating
 
@@ -136,20 +151,17 @@ Your Name
 Backend Developer
 FastAPI | MongoDB | Python
 
-# ✅ Important: .gitignore Update
+## ✅ Important: .gitignore Update
 Add the following to `.gitignore` depending on your project structure:
 
-# Ignore output files
-output/pdfs/
-output/qr/
+####  Ignore output if needed
+output/
 
-# Ignore assets if needed
+#### Ignore assets if needed
 assets/
 
-# Ignore virtual environment
+#### Ignore virtual environment
 venv/
 
-# Ignore env file
-.env# akm_event_ticket_system
-# akm_event_ticket_system
-# akm_event_ticket_system
+#### Ignore env file
+.env#
