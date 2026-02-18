@@ -4,7 +4,6 @@ from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from app1.routes import generate, scan
 from fastapi.middleware.cors import CORSMiddleware
-from app1.routes.scan import router as scan_router
 
 # Initialize the FastAPI application
 app = FastAPI()
@@ -32,7 +31,6 @@ app.add_middleware(
 # Including routers for the application modules
 app.include_router(generate.router, prefix="/ticket")
 app.include_router(scan.router, prefix="/ticket") 
-app.include_router(scan_router)
 
 # Welcome Endpoint
 @app.get("/greating", tags=["Welcome & Health"])
