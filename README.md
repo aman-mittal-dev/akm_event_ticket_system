@@ -147,7 +147,7 @@ GET /
 
 ## 👨‍💻 Author
 
-Your Name
+Aman Kumar Mittal
 Backend Developer
 FastAPI | MongoDB | Python
 
